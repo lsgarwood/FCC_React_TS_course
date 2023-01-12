@@ -9,6 +9,12 @@ export interface TodoListProps {
     setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
+export interface SingleTodoProps {
+    todo: Todo;
+    todos: Todo[];
+    setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+}
+
 export interface Todo {
     id: number;
     todo: string;

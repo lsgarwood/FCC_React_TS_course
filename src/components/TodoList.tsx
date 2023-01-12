@@ -1,11 +1,17 @@
 import React from 'react'
 import { TodoListProps } from '../model';
+import SingleTodo from './SingleTodo';
 
 const TodoList: React.FC<TodoListProps> = ({ todos, setTodos }) => {
   return (
     <div className='todos'>
       {todos.map((todo) => (
-        <li>{todo.todo}</li>
+        <SingleTodo 
+            todo={todo}
+            key={todo.id}
+            todos={todos}
+            setTodos={setTodos}
+        />
       ))}
     </div>
   )

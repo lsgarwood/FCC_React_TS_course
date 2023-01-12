@@ -45,6 +45,15 @@
 }
 
 .todos {
-    text-align: center;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.todos_single {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: white;
 }
