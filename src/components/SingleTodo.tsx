@@ -3,8 +3,6 @@ import { SingleTodoProps } from '../model'
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 import {  MdDone } from "react-icons/md";
 import "./styles.css";
-import TodoList from './TodoList';
-import { getTextOfJSDocComment } from 'typescript';
 
 const SingleTodo: React.FC<SingleTodoProps> = ({ todo, todos, setTodos }) => {
 

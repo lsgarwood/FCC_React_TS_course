@@ -16,7 +16,7 @@
 }
 
 .input_box:focus {
-    box-shadow: 0 0 10px 1000px rgb(230, 215, 215);
+    box-shadow: 0 0 0 3px rgb(230, 215, 215);
     outline: none;
 }
 
