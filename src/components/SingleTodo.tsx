@@ -38,7 +38,7 @@ const SingleTodo: React.FC<SingleTodoProps> = ({ todo, todos, setTodos, index })
     }, [edit]);
 
   return (
-    <Draggable draggableId={todo.id.toString()} index={index} >
+    <Draggable draggableId={todo.id.toString()} index={index}>
         {(provided) => (
             <form 
             className="todos_single" 
