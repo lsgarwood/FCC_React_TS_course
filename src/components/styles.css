@@ -47,34 +47,41 @@
 .container {
     display: flex;
     width: 95%;
-    margin-top: 20px;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
 }
 
-.todos, .todos-remove {
+.todos {
     display: flex;
-    width: 47.5%;
     flex-direction: column;
+    width: 50%;
     padding: 15px;
     margin: 10px;
-    border-radius: 50px;
-    background-color: antiquewhite;
+    border-radius: 30px;
+    border: 3px solid rgb(247, 245, 246);
 }
 
 .todos__heading {
+    display: flex;
+    flex-direction: center;
     font-size: 30px;
-    color: rgb(199, 166, 177);
+    color: white;
 }
 
 .todos_single {
     display: flex;
     border-radius: 50px;
-    padding: 20px;
-    margin-top: 15px;
+    padding: 10px;
+    margin-top: 10px;
     background-color: white;
     color: rgb(70, 69, 69);
     align-items: center;
+    transition: 0.2s;
+}
+
+.todos_single:hover {
+    box-shadow: 0 0 5px rgb(112, 103, 103);
+    transform: scale(1.03);
 }
 
 .todos_single--text {
@@ -89,4 +96,20 @@
     margin-left: 10px;
     font-size: 25px;
     cursor: pointer;
+}
+
+.remove {
+    border: 3px solid rgb(247, 245, 246);
+}
+
+.dragactive {
+    background-color: rgb(231, 202, 209);
+}
+
+.dragcomplete {
+    background-color: rgb(231, 202, 209);
+}
+
+.drag {
+    box-shadow: 0 0 20px rgb(112, 103, 103);
 }

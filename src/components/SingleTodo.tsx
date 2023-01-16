@@ -39,9 +39,9 @@ const SingleTodo: React.FC<SingleTodoProps> = ({ todo, todos, setTodos, index })
 
   return (
     <Draggable draggableId={todo.id.toString()} index={index}>
-        {(provided) => (
+        {(provided, snapshot) => (
             <form 
-            className="todos_single" 
+            className={`todos_single ${snapshot.isDragging ? "drag" : ""}`} 
             onSubmit={(e) => handleEdit(e, todo.id)}
             {...provided.draggableProps}
             {...provided.dragHandleProps}

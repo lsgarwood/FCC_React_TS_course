@@ -22,8 +22,6 @@ const App: React.FC = () => {
 
   const onDragEnd = (result: DropResult) => {
     const { source, destination } = result;
-    console.log(result);
-    
 
     if ( !destination ) return;
     if (
@@ -44,7 +42,7 @@ const App: React.FC = () => {
       complete.splice(source.index, 1);
     }
 
-    if ( destination.droppableId === "TodosListRemove") {
+    if ( destination.droppableId === "TodosList") {
       active.splice(destination.index, 0, add);
     } else {
       complete.splice(destination.index, 0, add);
